@@ -1,0 +1,12 @@
+/****Home****/
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h1 span {
+    color: var(--red-color);
+}
+

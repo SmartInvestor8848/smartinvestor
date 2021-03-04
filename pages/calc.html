@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Investor</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-crown"></i>Smart Investor</a>
+    </nav>
+    <br>
+    <!-- Share Calculator -->
+    <div class="container container-fluid">
+        <div class="calculator text-center">
+            <h2>Share Calculator</h2>
+            <br><br>
+            <div class="row">
+                <div class="col-6 col-sm-6" style="align-items: center;">
+                    <a class="payable btn btn-success btn-sm" id="button" href="#">Buying Stock</a>
+                </div>
+
+                <div class="col-6 col-sm-6" style="align-items: center;">
+                    <a class="payable btn btn-success btn-sm" id="button1" href="#">Selling Stock</a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 col-sm-6" style="align-items: center;">
+                    <a class="payable btn btn-success btn-sm" id="button2" href="#">Bonus Share Adjustment</a>
+                </div>
+                <div class="col-6 col-sm-6" style="align-items: center;">
+                    <a class="payable btn btn-success btn-sm" id="button3" href="#">Right Share Adjustment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal popup buying stock -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <br>
+            <img src="../assets/img/smart.png" alt="" style="width:80px; height:80px;">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Share Quantity: </label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box6" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Purchase Price:</label>
+                    <div class="col-7 col-sm-7s">
+                        <input type="number" id="box7" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-7 col-sm-7">
+                        <input class="btn btn-success" type="button" value="Calculate" onclick="calcPay()">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"><h6 >Payable amount:</h6></label>
+                    <div class="col-7 col-sm-7">
+                        <input type="text" id="c"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- modal popup Selling stock -->
+    <div class="bg-modal1">
+        <div class="modal-content">
+            <div class="close1">+</div>
+            <br>
+            <img src="../assets/img/smart.png" alt="" style="width:80px; height:80px;">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Share Quantity: </label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box8" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Purchase Price:</label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box9" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Selling Price:</label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box10" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-7 col-sm-7">
+                        <input class="btn btn-success" type="button" value="Calculate" onclick="calcSell()">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"><h6>Receiveable amount:</h6></label>
+                    <div class="col-7 col-sm-7">
+                        <input type="text" id="d"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- modal popup Bonus adjustment stock -->
+    <div class="bg-modal2">
+        <div class="modal-content">
+            <div class="close2">+</div>
+            <br>
+            <img src="../assets/img/smart.png" alt="" style="width:80px; height:80px;">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Market Price(Before Book Closer): </label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box1" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">% of Bonus Share:</label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box2" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-7 col-sm-7">
+                        <input class="btn btn-success" type="button" value="Calculate" onclick="calcBonus()">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"><h6>Market Price after Bonus Share:</h6></label>
+                    <div class="col-7 col-sm-7">
+                        <input type="text" id="b"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- modal popup Right adjustment stock -->
+    <div class="bg-modal3">
+        <div class="modal-content">
+            <div class="close3">+</div>
+            <br>
+            <img src="../assets/img/smart.png" alt="" style="width:80px; height:80px;">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">Market Price(Before Book Closer): </label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box3" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5">% of Right Share:</label>
+                    <div class="col-7 col-sm-7">
+                        <input type="number" id="box4" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-6">Paid-up Value per Share: </label>
+                    <div class="col-5 col-sm-5">
+                        <select type="number" class="form-control form-control-sm" id="box5" required>
+                            <option value="100">100</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-7 col-sm-7">
+                        <input class="btn btn-success" type="button" value="Calculate" onclick="calcRight()">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5 col-sm-5"><h6 >Market Price after Right Share:</h6></label>
+                    <div class="col-7 col-sm-7">
+                        <input type="text" id="r"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../assets/js/function.js"></script>
+    <script src="https://kit.fontawesome.com/e8766a1b3a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
