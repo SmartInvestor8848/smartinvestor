@@ -78,7 +78,7 @@ function calcSell() {
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
     } else {
-        var nettotal = income * (1 - 0.0037 - 0.00015) - 25;
+        var nettotal = income * (1 - 0.0040 - 0.00015) - 25;
         var cgt = (nettotal - invest) * (1 - 0.95);
         var total = nettotal - cgt;
         var total = total.toFixed(2);
