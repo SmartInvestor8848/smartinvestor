@@ -21,6 +21,10 @@ body {
     font-weight: 600;
 }
 
+span {
+    color: #c70000;
+}
+
 :root {
     --red-color: #c70000;
     --green-color: #28a745;
@@ -73,15 +77,13 @@ a {
     width: 90%;
     height: auto;
     margin: auto;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
 }
-
-.homepage,
-.about {
-    margin: auto;
+.homepage{
+    margin-top: 10%
 }
-
 .logo img {
     margin: 20% 0 0 0;
     max-width: 320px;
