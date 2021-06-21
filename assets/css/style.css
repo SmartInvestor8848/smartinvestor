@@ -90,7 +90,8 @@ a {
     border-radius: 50%;
 }
 
-.logo_label, .logo_icon {
+.logo_label,
+.logo_icon {
     margin: 0 -40% 0 20%;
 }
 
@@ -103,7 +104,6 @@ a {
     border-radius: 50%;
     max-width: 320px;
     border: 3px solid #ffe500;
-
 }
 
 /*** Portfolio ***/
