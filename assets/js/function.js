@@ -86,44 +86,69 @@ function calcSell() {
     }
 }
 
-//buying
-document.getElementById('button', ).addEventListener('click',
+function valueInvest()  {
+    let box11 = document.getElementById("box11").value; //Net Income
+    let box12 = document.getElementById("box12").value; // Total Equity
+    let box13 = document.getElementById("box13").value; // Outstanding Shares
+    let box14 = document.getElementById("box14").value; // Book Value
+    var eps = Number(box11) / Number(box13);
+    var vinvest = sqrt(22.5 * Number(box14) * eps);
+    var vinvest = varinvest.toFixed(0);
+    documnet.getElementById("vi").value = vinvest;
+}
+
+// open and close of modal or card
+//buying stocks
+    document.getElementById('button', ).addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'flex';
     });
 
-document.querySelector('.close').addEventListener('click',
+    document.querySelector('.close').addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'none';
     });
-//selling
-document.getElementById('button1', ).addEventListener('click',
+
+//selling Stocks
+    document.getElementById('button1', ).addEventListener('click',
     function () {
         document.querySelector('.bg-modal1').style.display = 'flex';
     });
 
-document.querySelector('.close1').addEventListener('click',
+    document.querySelector('.close1').addEventListener('click',
     function () {
         document.querySelector('.bg-modal1').style.display = 'none';
     });
 
-//bonus
-document.getElementById('button2', ).addEventListener('click',
+//bonus Adjustment
+    document.getElementById('button2').addEventListener('click',
     function () {
         document.querySelector('.bg-modal2').style.display = 'flex';
     });
 
-document.querySelector('.close2').addEventListener('click',
+    document.querySelector('.close2').addEventListener('click',
     function () {
         document.querySelector('.bg-modal2').style.display = 'none';
     });
-//right
-document.getElementById('button3', ).addEventListener('click',
+
+//right Adjustment
+    document.getElementById('button3' ).addEventListener('click',
     function () {
         document.querySelector('.bg-modal3').style.display = 'flex';
     });
 
-document.querySelector('.close3').addEventListener('click',
+    document.querySelector('.close3').addEventListener('click',
     function () {
         document.querySelector('.bg-modal3').style.display = 'none';
+    });
+
+//value Investing
+    document.getElementById('button4' ).addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal4').style.display = 'flex';
+    });
+
+    document.querySelector('.close4').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal4').style.display = 'none';
     });
