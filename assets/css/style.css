@@ -66,11 +66,11 @@ a {
 }
 
 .grandparent {
-    width: 100vh;
+    width: auto;
 }
 
 .parent {
-    width: auto;
+    width: 90%;
     height: auto;
     margin: auto;
     justify-content: space-around;
@@ -92,23 +92,23 @@ a {
 
 .logo_label,
 .logo_icon {
-    margin: 0 -40% 0 20%;
+    margin: 0 0 0 0;
 }
 
 /*** About ***/
 .about_data {
-    max-width: 50%;
+    max-width: 750px;
 }
 
 .about img {
-    border-radius: 50%;
+    border-radius: 750px;
     max-width: 320px;
     border: 3px solid #ffe500;
 }
 
 /*** Portfolio ***/
 .portfolio_data {
-    max-width: 50%;
+    max-width: 750px;
 }
 
 .portfolio_img img {
