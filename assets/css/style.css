@@ -48,7 +48,6 @@ a {
 }
 
 /*** Navbar ***/
-
 .navbar {
     background-color: var(--blue-color) !important;
     font-weight: 650;
@@ -68,7 +67,6 @@ a {
 
 
 /*** smart ***/
-
 .smart {
     margin-top: 1%;
 }
@@ -85,7 +83,6 @@ a {
 }
 
 /*** About ***/
-
 .about_data {
     margin-top: 2%;
 }
@@ -97,6 +94,11 @@ a {
 .about_img img {
     border-radius: 50%;
     max-width: 320px;
+}
+
+/*** Portfolio ***/
+.portfolio_img img {
+   max-width: 720px
 }
 
 /*** Contact ***/
