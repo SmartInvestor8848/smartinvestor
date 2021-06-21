@@ -73,7 +73,6 @@ a {
     width: 90%;
     height: auto;
     margin: auto;
-    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,7 +83,7 @@ a {
 }
 
 .logo img {
-    margin: auto;
+    margin: 20% 0 0 0;
     max-width: 320px;
     border: 3px solid #28a745;
     border-radius: 50%;
