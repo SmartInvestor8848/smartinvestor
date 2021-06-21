@@ -70,22 +70,24 @@ a {
 }
 
 .grandparent {
-    width: auto;
+    width: 95vw;
 }
 
 .parent {
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: auto;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
 }
-.homepage{
-    margin-top: 10%
+
+.homepage {
+    margin-top: 10%;
 }
+
 .logo img {
-    margin: 20% 0 0 0;
+    margin-top: 20%;
     max-width: 320px;
     border: 3px solid #28a745;
     border-radius: 50%;
@@ -93,19 +95,18 @@ a {
 
 /*** About ***/
 .about_data {
-    max-width: 750px;
+    max-width: 780px;
 }
 
 .about img {
-    border-radius: 750px;
+    border-radius: 50%;
     max-width: 320px;
     border: 3px solid #ffe500;
 }
 
-
 /*** Portfolio ***/
 .portfolio_data {
-    max-width: 750px;
+    max-width: 780px;
 }
 
 .portfolio_img img {
@@ -114,7 +115,6 @@ a {
 }
 
 /*** Contact ***/
-
 footer {
     background: var(--blue-color);
     color: #fff;
