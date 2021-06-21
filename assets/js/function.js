@@ -86,20 +86,23 @@ function calcSell() {
     }
 }
 
-function valueInvest()  {
-    let box11 = document.getElementById("box11").value; //Net Income
-    let box12 = document.getElementById("box12").value; // Total Equity
-    let box13 = document.getElementById("box13").value; // Outstanding Shares
-    let box14 = document.getElementById("box14").value; // Book Value
-    var eps = Number(box11) / Number(box13);
-    var vinvest = sqrt(22.5 * Number(box14) * eps);
-    var vinvest = varinvest.toFixed(0);
-    documnet.getElementById("vi").value = vinvest;
+function invest()  {
+    let box11 = document.getElementById("box11").value;
+    let box12 = document.getElementById("box12").value;
+    let box13 = document.getElementById("box13").value;
+    var eps = Number(box11) / Number(box12);
+    var eps = eps.toFixed(2);
+    document.getElementById("eps").value= eps;
+    var sum = 22.5 * Number(box13) * eps;
+    var sum = Math.sqrt(sum);
+    var sum = sum.toFixed(0);
+    document.getElementById("v").value = sum;
 }
+
 
 // open and close of modal or card
 //buying stocks
-    document.getElementById('button', ).addEventListener('click',
+    document.getElementById('button').addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'flex';
     });
@@ -110,7 +113,7 @@ function valueInvest()  {
     });
 
 //selling Stocks
-    document.getElementById('button1', ).addEventListener('click',
+    document.getElementById('button1').addEventListener('click',
     function () {
         document.querySelector('.bg-modal1').style.display = 'flex';
     });
@@ -132,7 +135,7 @@ function valueInvest()  {
     });
 
 //right Adjustment
-    document.getElementById('button3' ).addEventListener('click',
+    document.getElementById('button3').addEventListener('click',
     function () {
         document.querySelector('.bg-modal3').style.display = 'flex';
     });
@@ -143,7 +146,7 @@ function valueInvest()  {
     });
 
 //value Investing
-    document.getElementById('button4' ).addEventListener('click',
+    document.getElementById('button4').addEventListener('click',
     function () {
         document.querySelector('.bg-modal4').style.display = 'flex';
     });
