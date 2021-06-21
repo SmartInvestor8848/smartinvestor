@@ -144,6 +144,7 @@ function invest()  {
     function () {
         document.querySelector('.bg-modal3').style.display = 'none';
     });
+<<<<<<< HEAD
 
 //value Investing
     document.getElementById('button4').addEventListener('click',
@@ -155,3 +156,5 @@ function invest()  {
     function () {
         document.querySelector('.bg-modal4').style.display = 'none';
     });
+=======
+>>>>>>> 502306567f3db90736b399746dd9dbcc431b322f
