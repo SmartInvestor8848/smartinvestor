@@ -1,0 +1,8 @@
+@media(max-width:420px){
+    .smart_img{
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    
+}

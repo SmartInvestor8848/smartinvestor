@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +9,76 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><i class="fas fa-crown"></i>Smart Investor</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-md-auto">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href=pages/calc.html>Share Calculator</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <a class="btn btn-success" href="pages/signin.html">Sign In</a>
-            </ul>
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-crown"></i>Smart Investor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-md-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href=pages/calc.html>Share Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <a class="btn btn-success" href="pages/signin.html">Sign In</a>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- smart -->
-    <div class="smart container container-fluid" id="smart">
-        <div class="row">
-            <div class="smart_data col-sm-4">
+    <div class="grandparent" id="smart">
+        <div class="parent">
+            <div class="homepage">
                 <h1 class="smart_title">Hello,<br>Smart <span>Pe</span>ople<br>
                 </h1>
                 <a href="#contact" class="nav-link-lg btn btn-success">Contact</a>
             </div>
-            <div class="smart_img col-sm-4 ml-md-auto">
-                <img src="assets/img/Smart.jpg" alt="">
+            <div class="logo">
+                <img src="assets/img/Smart.jpg" alt="img">
             </div>
         </div>
-        <label>Follow Us On: </label>
-        <div class="icon row" style="margin-top:2%;">
-            <div class="col-sm-1"><a href="https://www.facebook.com/groups/1614673792024279"><i
+        <label class="logo_label">Follow Us On: </label>
+        <div class="row logo_icon">
+            <div class="col-1"><a href="https://www.facebook.com/groups/1614673792024279"><i
                         class="fab fa-facebook"></i></a></div>
-            <div class="col-sm-1"><a href="https://www.instagram.com/smart_investor_8848/"><i
-                        class="fab fa-instagram"></i></a></div>
+            <div class="col-1"><a href="https://www.instagram.com/smart_investor_8848/"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     <!-- About -->
-    <div class="about container container-fluid" id="about">
-        <h2 class="about_title text-center">About Stock</h2>
-        <div class="about_data row">
-            <div class="about_img">
-                <img class="col-5 col-sm-5" src="assets/img/dollar.jpg" alt="" id="animated-example">
+    <h2 class="about_title text-center">About Stock</h2>
+    <br>
+    <div class="grandparent" id="about">
+        <div class="parent">
+            <div class="about">
+                <img src="assets/img/dollar.jpg" alt="" id="animated-example">
             </div>
-            <div class="col-6 col-sm-6 ml-md-auto">
+
+            <div class="about_data">
                 <h5 class="about_subtitle">Hello Smart Investors,</h5>
-                <p class="about_text"> This company is established in 2020 for sharing financial Advices.<br>
-                    Stocks can be a valuable part of your investment portfolio. Owning stocks in different companies can
-                    help you build your savings, protect your money from inflation and maximize income from
-                    your investments.
-                    It's important to know that there are risks when investing in the stock market.
-                    Like any investment, it helps to understand the risk/return relationship and your own tolerance for
+                <p> This company is established in 2020 for sharing financial Advices.<br>
+                    Stocks can be a valuable part of your investment portfolio. Owning stocks in different companies
+                    can
+                    help you build your savings, protect your money from inflation and maximize income from your
+                    investments. It's important to know that there are risks when investing in the stock market.
+                    Like
+                    any investment, it helps to understand the risk/return relationship and your own tolerance for
                     risk.
                     <br><br><br>
                     Historically, long-term equity returns have been better than returns from cash or fixed-income
-                    investments such as bonds. However, stock prices tend to rise and fall over time. Investors may want
+                    investments such as bonds. However, stock prices tend to rise and fall over time. Investors may
+                    want
                     to consider a long-term perspective for their equity portfolio because these stock-market
                     fluctuations do tend to smooth out over longer periods of time.
                 </p>
             </div>
-            <div class="about_icon col-sm-1 ml-md-auto">
+            <div class="about_icon col-sm-1">
                 <label>Follow Us On</label>
                 <div class="row"><a href="https://www.facebook.com/groups/1614673792024279"><i
                             class="fab fa-facebook"></i></a></div>
@@ -79,23 +88,24 @@
             </div>
         </div>
     </div>
-    <div class="portfolio container container-fluid" id="portfolio">
-        <h2 class="portfolio_title text-center">Portfolio Management</h2>
-        <br>
-        <div class="portfolio_data row"> 
-            <div class="col-7 col-sm-7">
-                <p class="about_text text-center"> What is Portfolio Management?<br></p>
+    <!-- Portfolio -->
+    <h2 class="portfolio_title text-center">Portfolio Management</h2>
+    <br>
+    <div class="grandparent" id="portfolio">
+        <div class="parent">
+            <div class="portfolio_data">
+                <h5 class="portfolio_subtitle text-center">What is Portfolio Management?</h5>
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;A portfolio is a collection of financial investments like stocks, 
-                    bonds, commodities, cash, and cash equivalents, including closed-end funds and exchange traded 
-                    funds (ETFs). People generally believe that stocks, bonds, and cash comprise the core of a 
-                    portfolio. Though this is often the case, it does not need to be the rule. A portfolio may 
+                    &nbsp;&nbsp;&nbsp;&nbsp;A portfolio is a collection of financial investments like stocks,
+                    bonds, commodities, cash, and cash equivalents, including closed-end funds and exchange traded
+                    funds (ETFs). People generally believe that stocks, bonds, and cash comprise the core of a
+                    portfolio. Though this is often the case, it does not need to be the rule. A portfolio may
                     contain a wide range of assets including real estate, art, and private investments.
                     <br>
                 </p>
             </div>
             <div class="portfolio_img">
-                <img class="col-5 col-sm-5" src="assets/img/portfolio.gif" alt="">
+                <img class="ml-md-auto" src="assets/img/portfolio.gif" alt="">
             </div>
         </div>
     </div>
@@ -137,4 +147,5 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

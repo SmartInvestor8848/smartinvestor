@@ -65,40 +65,55 @@ a {
     color: var(--yellow-color) !important;
 }
 
-
-/*** smart ***/
-.smart {
-    margin-top: 1%;
+.grandparent {
+    width: 100vh;
 }
 
-.icon i {
-    margin-top: 5px;
+.parent {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.smart_img img {
-    max-width: 385px;
-    margin-top: 80px;
+.homepage,
+.about {
+    margin: auto;
+}
+
+.logo img {
+    margin: 35% 0 0 0;
+    max-width: 320px;
     border: 3px solid #28a745;
     border-radius: 50%;
 }
 
+.logo_label, .logo_icon {
+    margin: 0 -40% 0 20%;
+}
+
 /*** About ***/
 .about_data {
-    margin-top: 2%;
+    max-width: 50%;
 }
 
-.about_icon {
-    margin: auto 0;
-}
-
-.about_img img {
+.about img {
     border-radius: 50%;
     max-width: 320px;
+    border: 3px solid #ffe500;
+
 }
 
 /*** Portfolio ***/
+.portfolio_data {
+    max-width: 50%;
+}
+
 .portfolio_img img {
-   max-width: 720px
+    max-width: 320px;
+    border-radius: 5%
 }
 
 /*** Contact ***/
