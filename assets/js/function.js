@@ -94,49 +94,17 @@ function invest()  {
     var sum = sum.toFixed(0);
     document.getElementById("v").value = sum;
 }
-// open and close of modal or card
-//buying stocks
-    document.getElementById('button').addEventListener('click',
-    function () {
+
+//clickin bgutton for modal popup i.e opening
+let buttons = document.querySelectorAll('.payable')
+buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
         document.querySelector('.bg-modal').style.display = 'flex';
     });
-    document.querySelector('.close').addEventListener('click',
+});
+
+// open and close of modal or card
+document.querySelector('.close').addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'none';
-    });
-//selling Stocks
-    document.getElementById('button1').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal1').style.display = 'flex';
-    });
-    document.querySelector('.close1').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal1').style.display = 'none';
-    });
-//bonus Adjustment
-    document.getElementById('button2').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal2').style.display = 'flex';
-    });
-    document.querySelector('.close2').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal2').style.display = 'none';
-    });
-//right Adjustment
-    document.getElementById('button3').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal3').style.display = 'flex';
-    });
-    document.querySelector('.close3').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal3').style.display = 'none';
-    });
-//value Investing
-    document.getElementById('button4').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal4').style.display = 'flex';
-    });
-    document.querySelector('.close4').addEventListener('click',
-    function () {
-        document.querySelector('.bg-modal4').style.display = 'none';
     });
