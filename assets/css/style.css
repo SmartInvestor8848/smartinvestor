@@ -142,15 +142,15 @@ footer i {
 }
 
 .modal-content {
-    width: 470px;
-    height: 420px;
+    width: 95vw;
+    height: 100%;
     background-color: #000;
     opacity: 1;
     border-color: var(--green-color);
     border-radius: 5px;
-    text-align: center;
     align-items: center;
     position: relative;
+    margin: auto;
 }
 
 .close,
