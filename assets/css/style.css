@@ -126,7 +126,11 @@ footer i {
     color: #fff;
 }
 
-.bg-modal {
+.bg-modal,
+.bg-modal1,
+.bg-modal2,
+.bg-modal3,
+.bg-modal4 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -138,7 +142,7 @@ footer i {
 }
 
 .modal-content {
-    width: 480px;
+    width: 470px;
     height: 420px;
     background-color: #000;
     opacity: 1;
@@ -149,7 +153,11 @@ footer i {
     position: relative;
 }
 
-.close{
+.close,
+.close1,
+.close2,
+.close3,
+.close4 {
     position: absolute;
     top: 0;
     right: 10px;
@@ -159,6 +167,10 @@ footer i {
     color: #ffffff;
 }
 
-.close:hover{
+.close:hover,
+.close1:hover,
+.close2:hover,
+.close3:hover,
+.close4:hover {
     color: var(--green-color)
 }

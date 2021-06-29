@@ -94,17 +94,55 @@ function invest()  {
     var sum = sum.toFixed(0);
     document.getElementById("v").value = sum;
 }
-
-//clickin bgutton for modal popup i.e opening
-let buttons = document.querySelectorAll('.payable')
-buttons.forEach((btn) => {
-    btn.addEventListener("click", function () {
-        document.querySelector('.bg-modal').style.display = 'flex';
-    });
-});
-
-// open and close of modal or card
+// Close of modal or card
 document.querySelector('.close').addEventListener('click',
     function () {
         document.querySelector('.bg-modal').style.display = 'none';
     });
+
+document.querySelector('.close1').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal1').style.display = 'none';
+    });
+document.querySelector('.close2').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal2').style.display = 'none';
+    });
+document.querySelector('.close3').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal3').style.display = 'none';
+    });
+document.querySelector('.close4').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal4').style.display = 'none';
+    });
+
+//Open Modal
+document.getElementById('button').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal1').style.display = 'flex';
+    });
+//selling Stocks
+document.getElementById('button1').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal2').style.display = 'flex';
+    });
+    
+//bonus Adjustment
+    document.getElementById('button2').addEventListener('click',
+    function () {
+        document.querySelector('.bg-modal3').style.display = 'flex';
+    });
+   
+//right Adjustment
+     document.getElementById('button3').addEventListener('click',
+     function () {
+         document.querySelector('.bg-modal3').style.display = 'flex';
+     });
+   
+//value Investing
+     document.getElementById('button4').addEventListener('click',
+     function () {
+         document.querySelector('.bg-modal4').style.display = 'flex';
+     });
+    
