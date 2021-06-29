@@ -72,24 +72,38 @@
             <br>
             <form>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Share Quantity: </label>
-                    <input class="col-6 col-sm-6" type="number" id="box6" required><br>
+                    <div class="col-5 col-sm-5">
+                        <label>Share Quantity:</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input type="number" id="box6" required><br>
+                    </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Purchase Price:</label>
-                    <input class="col-6 col-sm-6" type="number" id="box7" required><br>
+                    <div class="col-5 col-sm-5">
+                        <label>Purchase Price:</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input type="number" id="box7" required><br>
+                    </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-5 col-sm-5">
+                        <label></label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input class="btn btn-success" type="button" value="Calculate" onclick="calcPay()">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">
-                        <h6>Payable amount:</h6>
-                    </label>
-                    <input class="col-6 col-sm-6" type="number" id="c"><br>
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Payable amount:</h6>
+                        </label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input type="text" id="c">
+                    </div>
                 </div>
             </form>
         </div>
@@ -103,34 +117,44 @@
             <br>
             <form>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Share Quantity: </label>
-                    <div class="col-7 col-sm-7">
+                    <div class="col-5 col-sm-5">
+                        <label>Share Quantity:</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
                         <input type="number" id="box8" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Purchase Price:</label>
-                    <div class="col-7 col-sm-7">
+                    <div class="col-5 col-sm-5">
+                        <label>Purchase Price:</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
                         <input type="number" id="box9" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Selling Price:</label>
-                    <div class="col-7 col-sm-7">
+                    <div class="col-5 col-sm-5">
+                        <label>Selling Price:</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
                         <input type="number" id="box10" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5"></label>
-                    <div class="col-7 col-sm-7">
+                    <div class="col-5 col-sm-5">
+                        <label></label>
+                    </div>
+                    <div class="col-6 col-sm-6">
                         <input class="btn btn-success" type="button" value="Calculate" onclick="calcSell()">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">
-                        <h6>Receiveable amount:</h6>
-                    </label>
-                    <div class="col-7 col-sm-7">
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Receiveable amount:</h6>
+                        </label>
+                    </div>
+                    <div class="col-6 col-sm-6">
                         <input type="text" id="d"><br>
                     </div>
                 </div>
@@ -143,29 +167,36 @@
             <div class="close2">+</div>
             <br>
             <img src="../assets/img/smart.png" alt="logo" style="width:70px; height:70px;">
+            <br>
             <form>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Market Price(Before Book Closer): </label>
+                    <div class="col-5 col-sm-5">
+                        <label>Market Price(Before Book Closer):</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box1" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">% of Bonus Share:</label>
+                    <div class="col-5 col-sm-5">
+                        <label>% of Bonus Share:</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box2" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-5 col-sm-5"><label></label></div>
                     <div class="col-6 col-sm-6">
                         <input class="btn btn-success" type="button" value="Calculate" onclick="calcBonus()">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">
-                        <h6>Market Price after Bonus Share:</h6>
-                    </label>
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Market Price after Bonus Share:</h6>
+                        </label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="text" id="b"><br>
                     </div>
@@ -182,20 +213,26 @@
             <br>
             <form>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Market Price(Before Book Closer): </label>
+                    <div class="col-5 col-sm-5">
+                        <label>Market Price(Before Book Closer):</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box3" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">% of Right Share:</label>
+                    <div class="col-5 col-sm-5">
+                        <label>% of Right Share:</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box4" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Paid-up Value: </label>
-                    <div class="col-6 col-sm-6">
+                    <div class="col-5 col-sm-5">
+                        <label>Paid-up Value:</label>
+                    </div>
+                    <div class="col-5 col-sm-5">
                         <select type="number" class="form-control form-control-sm" id="box5" required>
                             <option value="100">100</option>
                             <option value="10">10</option>
@@ -203,15 +240,19 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-5 col-sm-5">
+                        <label></label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input class="btn btn-success" type="button" value="Calculate" onclick="calcRight()">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">
-                        <h6>Market Price after Right Share:</h6>
-                    </label>
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Market Price after Right Share:</h6>
+                        </label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="text" id="r"><br>
                     </div>
@@ -228,39 +269,54 @@
             <br>
             <form>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Net Income: </label>
+                    <div class="col-5 col-sm-5">
+                        <label>Net Income:</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box11" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Outstanding Shares:</label>
+                    <div class="col-5 col-sm-5">
+                        <label>Outstanding Shares:</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box12" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">Book Value:</label>
+                    <div class="col-5 col-sm-5">
+                        <label>Book Value:</label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="number" id="box13" required><br>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5"></label>
+                    <div class="col-5 col-sm-5">
+                        <label></label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input class="btn btn-success" type="button" value="Calculate" onclick="invest()">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-5 col-sm-5">
-                        <h6>Earning Per Share(EPS):</h6>
-                    </label>
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Earning Per Share(EPS):</h6>
+                        </label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="text" id="eps"><br>
                     </div>
-                    <label class="col-5 col-sm-5">
-                        <h6>Fair Value:</h6>
-                    </label>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-5 col-sm-5">
+                        <label>
+                            <h6>Fair Value:</h6>
+                        </label>
+                    </div>
                     <div class="col-6 col-sm-6">
                         <input type="text" id="v"><br>
                     </div>
