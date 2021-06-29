@@ -140,7 +140,7 @@ footer i {
 .modal-content {
     width: 480px;
     height: 420px;
-    background: #000;
+    background-color: #000;
     opacity: 1;
     border-color: var(--green-color);
     border-radius: 5px;
@@ -159,6 +159,6 @@ footer i {
     color: #ffffff;
 }
 
-.close:hover
+.close:hover{
     color: var(--green-color)
 }
