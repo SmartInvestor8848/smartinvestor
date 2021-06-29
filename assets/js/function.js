@@ -120,18 +120,18 @@ document.querySelector('.close4').addEventListener('click',
 //Open Modal
 document.getElementById('button').addEventListener('click',
     function () {
-        document.querySelector('.bg-modal1').style.display = 'flex';
+        document.querySelector('.bg-modal').style.display = 'flex';
     });
 //selling Stocks
 document.getElementById('button1').addEventListener('click',
     function () {
-        document.querySelector('.bg-modal2').style.display = 'flex';
+        document.querySelector('.bg-modal1').style.display = 'flex';
     });
     
 //bonus Adjustment
     document.getElementById('button2').addEventListener('click',
     function () {
-        document.querySelector('.bg-modal3').style.display = 'flex';
+        document.querySelector('.bg-modal2').style.display = 'flex';
     });
    
 //right Adjustment
