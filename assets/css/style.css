@@ -138,8 +138,8 @@ footer i {
 }
 
 .modal-content {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     background-color: #000;
     opacity: 1;
     border-color: var(--green-color);
