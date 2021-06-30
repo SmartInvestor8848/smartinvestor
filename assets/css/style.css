@@ -167,12 +167,12 @@ footer i {
 .modal-content {
     width: 99.5%;
     height: 100%;
+    position: relative;
     background-color: #000;
     opacity: 1;
     border-color: var(--green-color);
     border-radius: 5px;
     align-items: center;
-    position: relative;
 }
 
 .close:hover,
