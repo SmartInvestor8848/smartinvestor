@@ -147,6 +147,7 @@ footer i {
     display: none;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .close,
@@ -164,7 +165,7 @@ footer i {
 }
 
 .modal-content {
-    width: 100vw;
+    width: 99.5%;
     height: 100%;
     background-color: #000;
     opacity: 1;
