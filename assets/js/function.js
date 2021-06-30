@@ -5,6 +5,7 @@ function calcBonus() {
     var sum = sum.toFixed(0);
     document.getElementById("b").value = sum;
 }
+
 function calcRight() {
     let box3 = document.getElementById("box3").value;
     let box4 = document.getElementById("box4").value;
@@ -13,6 +14,7 @@ function calcRight() {
     var sum = sum.toFixed(0);
     document.getElementById("r").value = sum;
 }
+
 function calcPay() {
     let box6 = document.getElementById("box6").value;
     let box7 = document.getElementById("box7").value;
@@ -44,6 +46,7 @@ function calcPay() {
         document.getElementById("c").value = total;
     }
 }
+
 function calcSell() {
     let box8 = document.getElementById("box8").value; //quantity
     let box9 = document.getElementById("box9").value; // Purchase price
@@ -82,13 +85,14 @@ function calcSell() {
         document.getElementById("d").value = total;
     }
 }
-function invest()  {
+
+function invest() {
     let box11 = document.getElementById("box11").value;
     let box12 = document.getElementById("box12").value;
     let box13 = document.getElementById("box13").value;
     var eps = Number(box11) / Number(box12);
     var eps = eps.toFixed(2);
-    document.getElementById("eps").value= eps;
+    document.getElementById("eps").value = eps;
     var sum = 22.5 * Number(box13) * eps;
     var sum = Math.sqrt(sum);
     var sum = sum.toFixed(0);
@@ -96,53 +100,52 @@ function invest()  {
 }
 // Close of modal or card
 document.querySelector('.close').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal').style.display = 'none';
     });
 
 document.querySelector('.close1').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal1').style.display = 'none';
     });
 document.querySelector('.close2').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal2').style.display = 'none';
     });
 document.querySelector('.close3').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal3').style.display = 'none';
     });
 document.querySelector('.close4').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal4').style.display = 'none';
     });
 
 //Open Modal
 document.getElementById('button').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal').style.display = 'flex';
     });
 //selling Stocks
 document.getElementById('button1').addEventListener('click',
-    function () {
+    function() {
         document.querySelector('.bg-modal1').style.display = 'flex';
     });
-    
+
 //bonus Adjustment
-    document.getElementById('button2').addEventListener('click',
-    function () {
+document.getElementById('button2').addEventListener('click',
+    function() {
         document.querySelector('.bg-modal2').style.display = 'flex';
     });
-   
+
 //right Adjustment
-     document.getElementById('button3').addEventListener('click',
-     function () {
-         document.querySelector('.bg-modal3').style.display = 'flex';
-     });
-   
+document.getElementById('button3').addEventListener('click',
+    function() {
+        document.querySelector('.bg-modal3').style.display = 'flex';
+    });
+
 //value Investing
-     document.getElementById('button4').addEventListener('click',
-     function () {
-         document.querySelector('.bg-modal4').style.display = 'flex';
-     });
-    
+document.getElementById('button4').addEventListener('click',
+    function() {
+        document.querySelector('.bg-modal4').style.display = 'flex';
+    });
