@@ -156,7 +156,7 @@ footer i {
 .close4 {
     position: absolute;
     top: 0;
-    right: 10px;
+    left: 97.5%;
     font-size: 30px;
     transform: rotate(45deg);
     cursor: pointer;
