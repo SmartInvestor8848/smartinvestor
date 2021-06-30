@@ -164,7 +164,7 @@ footer i {
 }
 
 .modal-content {
-    max-width: 100%;
+    max-width: 99%;
     height: 100%;
     position: relative;
     background-color: #000;
