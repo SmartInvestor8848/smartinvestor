@@ -181,3 +181,22 @@ footer i {
 .close4:hover {
     color: var(--yellow-color)
 }
+
+.cards {
+    align-items: center;
+    background-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #28a745;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 10% 30% 0 30%;
+    width: 420px;
+}
+
+form #uerror {
+    color: #c70000;
+    text-align: center;
+    display: none;
+}

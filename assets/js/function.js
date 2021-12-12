@@ -51,35 +51,42 @@ function calcSell() {
     let box8 = document.getElementById("box8").value; //quantity
     let box9 = document.getElementById("box9").value; // Purchase price
     let box10 = document.getElementById("box10").value; // Selling price
+    let boxtax = document.getElementById("boxtax").value; // select capital gain tax
     var income = Number(box8) * Number(box10);
     var invest = Number(box8) * Number(box9);
     if (income > 10000000) {
         var nettotal = income * (1 - 0.0027 - 0.00015) - 25;
-        var cgt = (nettotal - invest) * (1 - 0.95);
+        var cgt = (nettotal - invest) * boxtax;
         var total = nettotal - cgt;
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
     } else if (income >= 2000000 && income < 10000000) {
         var nettotal = income * (1 - 0.0030 - 0.00015) - 25;
-        var cgt = (nettotal - invest) * (1 - 0.95);
+        var cgt = (nettotal - invest) * boxtax;
         var total = nettotal - cgt;
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
     } else if (income >= 500000 && income < 2000000) {
         var nettotal = income * (1 - 0.0034 - 0.00015) - 25;
-        var cgt = (nettotal - invest) * (1 - 0.95);
+        var cgt = (nettotal - invest) * boxtax;
         var total = nettotal - cgt;
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
     } else if (income >= 50000 && income < 500000) {
         var nettotal = income * (1 - 0.0037 - 0.00015) - 25;
-        var cgt = (nettotal - invest) * (1 - 0.95);
+        var cgt = (nettotal - invest) * boxtax;
+        var total = nettotal - cgt;
+        var total = total.toFixed(2);
+        document.getElementById("d").value = total;
+    } else if (income < 50000) {
+        var nettotal = income * (1 - 0.0040 - 0.00015) - 25;
+        var cgt = (nettotal - invest) * boxtax;
         var total = nettotal - cgt;
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
     } else {
         var nettotal = income * (1 - 0.0040 - 0.00015) - 25;
-        var cgt = (nettotal - invest) * (1 - 0.95);
+        var cgt = (nettotal - invest) * boxtax;
         var total = nettotal - cgt;
         var total = total.toFixed(2);
         document.getElementById("d").value = total;
