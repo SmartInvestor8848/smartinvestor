@@ -53,6 +53,12 @@
                             <a class="payable btn btn-success btn-sm" id="button2" href="#">Bonus Share Adjustment</a>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <a class="payable btn btn-success btn-sm" id="button5" href="#">WACC for Bonus</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -327,6 +333,51 @@
                     </div>
                     <div class="col-6 col-sm-6">
                         <input class="form-control form-control-sm" type="text" id="v"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal Popup WACC for Bonus-->
+    <div class="bg-modal5">
+        <div class="modal-content">
+            <div class="close5">+</div>
+            <br>
+            <img src="../assets/img/smart.png" alt="logo" style="width:70px; height:70px;">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <div class="col-6 col-sm-6">
+                        <label>WACC</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input class="form-control form-control-sm" type="number" id="box14" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-6 col-sm-6">
+                        <label>Bonus %</label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input class="form-control form-control-sm" type="number" id="box15" required><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-6 col-sm-6">
+                        <label></label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input class="btn btn-success" type="button" value="Calculate" onclick="wacc()">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-6 col-sm-6">
+                        <label>
+                            <h6>Weighted Average(WACC):</h6>
+                        </label>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <input class="form-control form-control-sm" type="text" id="wa"><br>
                     </div>
                 </div>
             </form>

@@ -105,7 +105,17 @@ function invest() {
     var sum = sum.toFixed(0);
     document.getElementById("v").value = sum;
 }
-// Close of modal or card
+
+function wacc() {
+    let box14 = document.getElementById("box14").value;
+    let box15 = document.getElementById("box15").value;
+    var wacc = (Number(box14) + 100) / (1 + (Number(box15) / 100));
+    var wacc = wacc.toFixed(2);
+    document.getElementById("wa").value = wacc;
+}
+
+
+// ********************Close of modal or card************************
 document.querySelector('.close').addEventListener('click',
     function() {
         document.querySelector('.bg-modal').style.display = 'none';
@@ -127,8 +137,12 @@ document.querySelector('.close4').addEventListener('click',
     function() {
         document.querySelector('.bg-modal4').style.display = 'none';
     });
+document.querySelector('.close5').addEventListener('click',
+    function() {
+        document.querySelector('.bg-modal5').style.display = 'none';
+    });
 
-//Open Modal
+//*********************Open Modal******************
 document.getElementById('button').addEventListener('click',
     function() {
         document.querySelector('.bg-modal').style.display = 'flex';
@@ -155,4 +169,9 @@ document.getElementById('button3').addEventListener('click',
 document.getElementById('button4').addEventListener('click',
     function() {
         document.querySelector('.bg-modal4').style.display = 'flex';
+    });
+//WACC Bonus
+document.getElementById('button5').addEventListener('click',
+    function() {
+        document.querySelector('.bg-modal5').style.display = 'flex';
     });
