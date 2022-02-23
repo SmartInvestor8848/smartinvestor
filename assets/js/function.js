@@ -109,7 +109,11 @@ function invest() {
 function wacc() {
     let box14 = document.getElementById("box14").value;
     let box15 = document.getElementById("box15").value;
-    var wacc = (Number(box14) + 100) / (1 + (Number(box15) / 100));
+    let box16 = document.getElementById("box16").value;
+    var bon = Number(box16) / 100;
+    var ex = (bon * Number(box15) * 100);
+    var total = ((Number(box14) * Number(box15)) + ex) / Number(box15);
+    var wacc = total / (1 + bon);
     var wacc = wacc.toFixed(2);
     document.getElementById("wa").value = wacc;
 }
